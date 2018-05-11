@@ -3,11 +3,11 @@ const fs = require("fs")
 const client = new Discord.Client();
 let points = JSON.parse(fs.readFileSync('./typing/typePTS.json', 'utf8'));
 
-client.login('NDQ0MTMzNTM2NDA5MzIxNDc1.DdXfHg.LiSHfyDV81D5CJI8E7CUn9buhHA');
+client.login(process.env.BOT_TOKEN);
 
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-  console.log('Welcome i7 !');
+  console.log('Welcome Ryan !');
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log(`the bot is online as [ " ${client.user.username} " ]`);
 client.user.setStatus("dnd");
